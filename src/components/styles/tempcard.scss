@@ -1,0 +1,64 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  max-width: 500px;
+}
+.card {
+  display: grid;
+  place-content: center;
+  padding: 2em 1em;
+}
+.city-header {
+  font-size: 2rem;
+  text-align: center;
+}
+.condition-text {
+  font-size: 0.875rem;
+  font-weight: var(--fw-bold);
+}
+.condition-box {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25em;
+}
+.condition-icon {
+  width: 50px;
+}
+.col {
+  display: grid;
+  row-gap: 0.5em;
+}
+.temp {
+  text-align: center;
+  font-size: 2rem;
+}
+.weather-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 0.5em;
+}
+
+.sm-text {
+  font-size: 0.575rem;
+  font-weight: bold;
+  text-align: center;
+}
+.detail-icon {
+  width: 25px;
+}
+.col-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.country {
+  text-align: center;
+  font-weight: var(--fw-bold);
+  font-size: 0.775rem;
+}

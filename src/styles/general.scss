@@ -1,0 +1,168 @@
+:root {
+  /* Font Family */
+
+  --font-header: "Black Ops One", cursive;
+  --font-text: "Montserrat", sans-serif;
+  --font-stylish: "Sedgwick Ave Display", cursive;
+
+  /* Font Weight */
+
+  --fw-light: 300;
+  --fw-reg: 400;
+  --fw-med: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-extra: 900;
+
+  /* Font Sizes */
+
+  /* 10px */
+  --fs-100: 0.625rem;
+  /* 12px */
+  --fs-200: 0.75rem;
+  /* 14px */
+  --fs-300: 0.875rem;
+  /* 16px */
+  --fs-400: 1rem;
+  /* 18px */
+  --fs-500: 1.125rem;
+  /* 24px */
+  --fs-600: 1.5rem;
+  /* 36px */
+  --fs-700: 2.75rem;
+  /* 64px */
+  --fs-800: 4rem;
+  /* 64px */
+  --fs-900: 4.5rem;
+}
+/* * - - Box sizing rules - - */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* * - - Remove default margin - - */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* * - -  Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed - -  */
+
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* * - - Set core root defaults - - */
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: calc(100vh - 3.8em);
+}
+
+/* * - - Set core body defaults - - */
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  background-color: #000000 !important;
+}
+
+/* * - - A elements that don't have a class get default styles - -  */
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* * - - Heading Font Family - -  */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-header) !important;
+  line-height: 1;
+  color: white;
+}
+
+p {
+  font-family: var(--font-text);
+  font-weight: var(--fw-med);
+  color: #ffffff;
+}
+/* Text Size */
+
+/* * - - Make images easier to work with - - */
+
+img {
+  width: 100%;
+}
+img,
+picture,
+svg {
+  max-width: 100% !important;
+
+  display: block;
+}
+
+iframe {
+  border: none;
+  border-radius: 12px;
+}
+
+/* -------------------- Reset End -------------------- */
+
+/*  Custom Classes */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+
+  @media screen and (min-width: 500px) {
+    width: 80%;
+  }
+}
+
+// Text Align
+
+.t-ctr {
+  text-align: center !important;
+}
+
+.t-lt {
+  text-align: left !important;
+}
+.t-rt {
+  text-align: right !important;
+}
+
+// Display Flex center
+.d-flex {
+  display: flex;
+}
+.f-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// ELement spacer
+
+.el-spr > * + * {
+  margin-top: 0.5em !important;
+}
