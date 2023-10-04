@@ -32,6 +32,7 @@ export default function Search({ updateWeather }) {
         console.log(result);
         if (result.error) {
           setError(result.error.message);
+          console.log(result);
         } else {
           setError(null);
           updateWeather(result);
@@ -65,7 +66,7 @@ export default function Search({ updateWeather }) {
         </button>
       </div>
 
-      {error && <p className="error-msg">{error}</p>}
+      {error && <h3 className="error-msg">{error}</h3>}
     </div>
   );
 }

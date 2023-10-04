@@ -1,5 +1,5 @@
 .hero-container {
-  margin-top: 6em;
+  padding-top: 8em;
 }
 
 .search-box {
@@ -41,7 +41,7 @@
 .btn {
   border: none;
   border-radius: 5px;
-  background-color: rgb(216, 216, 216);
+  background-color: rgb(230, 155, 16);
   padding: 0.25em 0.5em;
   font-size: 0.875rem;
   font-family: var(--font-text);
@@ -60,4 +60,9 @@
   display: flex;
   gap: 0.5em;
   align-items: center;
+}
+
+.error-msg {
+  text-align: center;
+  padding: 1em 0em;
 }

@@ -11,7 +11,7 @@ import "./styles/tempcard.scss";
 export default function TempCard({ weatherData }) {
   return (
     <>
-      {weatherData && weatherData.location && (
+      {weatherData && weatherData.location ? (
         <div className="card-container">
           <div className="card el-spr">
             <h1 className="city-header">{weatherData.location.name}</h1>
@@ -63,9 +63,7 @@ export default function TempCard({ weatherData }) {
                     src={images.uv_index}
                     alt="UV Index"
                   />
-                  <p className="sm-text">
-                    {weatherData.forecast.forecastday[0].day.uv}
-                  </p>
+                  <p className="sm-text">{weatherData.current.uv}</p>
                 </div>
               </div>
               <div className="col">
@@ -115,6 +113,14 @@ export default function TempCard({ weatherData }) {
             </div>
           </div>
         </div>
+      ) : (
+        <>
+          <div className="loader-container">
+            <h1 className="loader-text">
+              Search for your Location to Find the Current Weather Details
+            </h1>
+          </div>
+        </>
       )}
     </>
   );

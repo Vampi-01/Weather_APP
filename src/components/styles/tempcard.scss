@@ -36,6 +36,7 @@
 .temp {
   text-align: center;
   font-size: 2rem;
+  margin: 1em 0em;
 }
 .weather-details {
   display: grid;
@@ -45,12 +46,15 @@
 }
 
 .sm-text {
-  font-size: 0.575rem;
+  font-size: 0.875rem;
   font-weight: bold;
   text-align: center;
+  @media screen and (min-width: 700px) {
+    font-size: 1rem;
+  }
 }
 .detail-icon {
-  width: 25px;
+  width: 35px;
 }
 .col-group {
   display: flex;
@@ -61,4 +65,16 @@
   text-align: center;
   font-weight: var(--fw-bold);
   font-size: 0.775rem;
+}
+.loader-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
