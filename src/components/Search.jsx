@@ -3,7 +3,7 @@ import "./styles/search.scss";
 
 const api = {
   key: import.meta.env.VITE_REACT_APP_API_KEY,
-  base: "http://api.weatherapi.com/v1/forecast.json",
+  base: "https://api.weatherapi.com/v1/forecast.json",
 };
 
 export default function Search({ updateWeather }) {
